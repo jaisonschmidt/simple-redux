@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-import { addFav } from "../../store/actions/favActions";
+import { CombinedActions as CA } from "../../store/combinedActions";
 
 export const ProductList = () => {
 
@@ -14,7 +14,7 @@ export const ProductList = () => {
             {products.map( (obj, key) => (
                 <button type="button" 
                     className="btn btn-primary btn-block mt-2" 
-                    onClick={ () => dispatch(addFav(obj))} 
+                    onClick={ () => dispatch(CA.FavActions.addFav(obj))} 
                     key={key}
                 >
                     {obj.Title}

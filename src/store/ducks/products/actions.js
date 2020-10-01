@@ -1,4 +1,4 @@
-import { SET_PRODUCTS } from "../types/productTypes";
+import { SET_PRODUCTS } from "./types";
 
 export const setProducts = products => ({
     type: SET_PRODUCTS,

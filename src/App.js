@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { setProducts } from "./store/actions/productAction";
+import { CombinedActions as CA } from "./store/combinedActions";
 
 import "./assets/css/global.css";
 
@@ -21,7 +21,7 @@ function App() {
       <div className="py-3">
         <button type="button" 
             className="btn btn-danger btn-block" 
-            onClick={() => dispatch(setProducts(PRODUCT_MOCK))}
+            onClick={() => dispatch(CA.ProductsActions.setProducts(PRODUCT_MOCK))}
         >
           Carrega produtos na store
         </button>

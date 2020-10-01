@@ -1,4 +1,4 @@
-import { ADD_FAV } from "../types/favTypes";
+import { ADD_FAV } from "./types";
 
 const initialState = {
     favs: []
