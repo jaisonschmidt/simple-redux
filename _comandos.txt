@@ -1,1 +1,5 @@
 npm i -D redux react-redux
+
+Middlewares
+
+redux-localstore - https://www.npmjs.com/package/redux-localstore
